@@ -1,0 +1,170 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media (max-width: 768px) {
+  .cardContainer {
+    justify-content: center;
+  }
+}
+.card_spec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 28rem;
+  width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.card_spec_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 7px;
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.card_text_div {
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
+  line-height: 15px;
+  overflow-x: auto;
+  max-height: 20rem;
+  width: 23rem;
+  display: inline-block;
+  margin: auto;
+}
+.card_text_div::-webkit-scrollbar {
+  /* width: 20rem; */
+  height: 2rem;
+}
+.card_text_div::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.card_text_div::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.card_text_div::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+.card_btn_bx {
+  border-top: 1px solid rgba(108, 103, 103, 0.223);
+  width: 100%;
+  max-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0.7rem 0;
+  margin-top: auto;
+}
+.card_btn_bx.single-block {
+  padding: 0;
+}
+.card_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_image {
+  max-height: 23rem;
+  width: 25rem;
+  border-radius: 5px;
+}
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+@media screen and (max-width: 550px) {
+  .card_spec {
+    max-height: 18rem;
+    width: 16rem;
+  }
+  .card_spec_text {
+    max-height: 16rem;
+    width: 16rem;
+  }
+  .card_text_div {
+    padding: 15px;
+    line-height: 20px;
+    max-height: 16rem;
+    width: 14rem;
+  }
+  .card_btn_bx {
+    max-height: 2rem;
+  }
+  .card_image {
+    max-height: 16rem;
+    width: 16rem;
+    border-radius: 5px;
+  }
+  .button-30 {
+    height: 20px;
+    font-size: 12px;
+  }
+}

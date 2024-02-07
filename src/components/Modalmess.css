@@ -1,0 +1,37 @@
+.modal_mess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.add_block_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: white;
+    padding: 2rem 0rem 2rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.modal_css{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
